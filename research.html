@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Shuai Xiao</title>
+  <meta name="description" content="Research directions of Shuai Xiao: LLM data governance and synthesis, multimodal foundation model pre-training, video generation, and agent systems.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="images/profile-placeholder.jpg" alt="Profile photo" class="profile-photo">
+        <h1 class="profile-name">Shuai Xiao</h1>
+        <p class="profile-title">Associate Professor, SJTU</p>
+        <p class="profile-affiliation">
+          School of Artifical Intelligence<br>
+          SJTU, Shanghai, China
+        </p>
+      </div>
+
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          benjaminforever@sjtu.edu.cn
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          Associate Professor, Shanghai Jiaotong University
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+          <a href="https://github.com/xiaoshuai09" target="_blank">GitHub: @xiaoshuai09</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm0 13.09l-5-2.73v-3.72L12 15l5-2.73v3.72l-5 2.73z"/></svg>
+          <a href="https://scholar.google.com/citations?user=qBTDCawAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </li>
+      </ul>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="section">
+        <h2 class="section-title">Research</h2>
+        <p>
+          My research centers on large foundation models and their industrial deployment, aiming to advance AI capabilities from the perspectives of data, algorithms, and systems.
+          The following four directions are closely connected and jointly drive next-generation multimodal intelligence in intelligent agents, recommendation, and content creation.
+        </p>
+      </section>
+
+      <!-- Direction 1: LLM & VLM Data Governance & Synthesis -->
+      <section class="research-section" id="data-governance">
+        <h2>LLM &amp; VLM Data Governance &amp; Synthesis</h2>
+        <p>
+          High-quality data is the cornerstone of LLMs and vision-language models (VLMs). We build large-scale multimodal corpus engineering pipelines that collect, clean, deduplicate, and evaluate heterogeneous data (text, image, audio, and video) for pre-training and fine-tuning.
+        </p>
+        <p>
+          We also develop data-centric methods such as informative token selection, synthetic data generation, and automated quality inspection, which have supported the training of large foundation models at Alibaba with consistently high data-quality standards.
+        </p>
+
+        <h3 class="subsection-title">Representative Papers</h3>
+        <ul class="publication-list">
+          <li class="publication-item">
+            <div class="publication-title">Squeeze Out Tokens from Sample for Finer-Grained Data Governance</div>
+            <div class="publication-authors">W. Lin, C. Ju, H. Wang, S. Hu, <strong>Shuai Xiao</strong>, M. Chen, Y. Jiao, M. Yao, J. Lan, Q. Liu, others</div>
+            <div class="publication-venue">arXiv / Under review, 2025</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Turbo: Informativity-Driven Acceleration Plug-In for Vision-Language Models</div>
+            <div class="publication-authors">C. Ju, H. Wang, H. Cheng, X. Chen, Z. Zhai, W. Huang, J. Lan, <strong>Shuai Xiao</strong>, B. Zheng</div>
+            <div class="publication-venue">European Conference on Computer Vision (ECCV), 2025, Oral</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="#" target="_blank">Code</a>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Projects &amp; Applications</h3>
+        <ul class="project-list">
+          <li class="project-item">
+            <h4>Billion-Scale Multimodal Corpus Engineering</h4>
+            <p>End-to-end data pipeline for Alibaba's foundation models, covering acquisition, cleaning, multilingual alignment, instruction-following data generation, and automated quality control. Enabled efficient convergence of large-scale models.</p>
+          </li>
+          <li class="project-item">
+            <h4>Data Governance Framework for Foundation Models</h4>
+            <p>Patented framework for multimodal data governance, supporting deduplication, toxicity filtering, privacy desensitization, and informative-token selection to reduce training cost while improving model quality.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Direction 2: LLM & Multimodal Pre-training -->
+      <section class="research-section" id="llm-mllm">
+        <h2>LLM &amp; Multimodal Pre-training</h2>
+        <p>
+          We design pre-training paradigms and efficient training systems for large language models (LLMs) and multimodal large language models (MLLMs), with a focus on contrastive language-image learning, cross-modal alignment, and scalable distributed training.
+        </p>
+        <p>
+          Our work has been deployed in Alibaba's AI search and intelligent assistant, serving a large user base while substantially reducing compute cost, and has powered the AIGC platform with a large volume of generated assets.
+        </p>
+
+        <h3 class="subsection-title">Representative Papers</h3>
+        <ul class="publication-list">
+          <li class="publication-item">
+            <div class="publication-title">Advancing Myopia To Holism: Fully Contrastive Language-Image Pre-training</div>
+            <div class="publication-authors">H. Wang, C. Ju, W. Lin, <strong>Shuai Xiao</strong>, M. Chen, Y. Huang, C. Liu, M. Yao, J. Lan, Y. Chen, others</div>
+            <div class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="#" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">FOLDER: Accelerating Multi-Modal Large Language Models with Enhanced Performance</div>
+            <div class="publication-authors">H. Wang, Z. Yu, G. Spadaro, C. Ju, V. Quétu, <strong>Shuai Xiao</strong>, E. Tartaglione</div>
+            <div class="publication-venue">International Conference on Computer Vision (ICCV), 2025</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration</div>
+            <div class="publication-authors">H. Jiang, F. Huang, Q. Hu, M. Sun, <strong>Shuai Xiao</strong>, Y. Li, J. Lin, J. Yao</div>
+            <div class="publication-venue">International Conference on Machine Learning (ICML), 2025</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Wave-Particle (Continuous–Discrete) Dualistic Visual Tokenization for Unified Understanding and Generation</div>
+            <div class="publication-authors">Y. Chen, C. Ju, Z. Wang, <strong>Shuai Xiao</strong>, X. Chen, J. Lan, X. Zhu, Y. Chen</div>
+            <div class="publication-venue">arXiv / Under review, 2025</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Projects &amp; Applications</h3>
+        <ul class="project-list">
+          <li class="project-item">
+            <h4>Unified Multimodal Pre-training Framework</h4>
+            <p>Integrated vision, language, and speech modalities with large-scale global optimization and generative joint training, achieving multi-scale cross-modal semantic alignment and significant generalization gains.</p>
+          </li>
+          <li class="project-item">
+            <h4>Training and Inference Acceleration</h4>
+            <p>Designed training and inference acceleration algorithms that substantially reduce computational cost while maintaining comparable model performance, including distributed parallelism, mixed-precision strategies, and efficient token selection.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Direction 3: Video Generation -->
+      <section class="research-section" id="video-generation">
+        <h2>Video Generation</h2>
+        <p>
+          We develop diffusion-based generative models for high-quality and controllable video synthesis, including virtual try-on, human image animation, and camera-controllable background generation.
+        </p>
+        <p>
+          These techniques have been integrated into Alibaba's AIGC platform, generating a large volume of assets and creating substantial business value in e-commerce content creation.
+        </p>
+
+        <h3 class="subsection-title">Representative Papers</h3>
+        <ul class="publication-list">
+          <li class="publication-item">
+            <div class="publication-title">Tunnel Try-on: Excavating Spatial-temporal Tunnels for High-quality Virtual Try-on in Videos</div>
+            <div class="publication-authors">Z. Xu, M. Chen, Z. Wang, L. Xing, Z. Zhai, N. Sang, J. Lan, <strong>Shuai Xiao</strong>, C. Gao</div>
+            <div class="publication-venue">The 32nd ACM International Conference on Multimedia (ACM MM), 2024</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="#" target="_blank">Project</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Wear-Any-Way: Manipulable Virtual Try-on via Sparse Correspondence Alignment</div>
+            <div class="publication-authors">M. Chen, X. Chen, Z. Zhai, C. Ju, X. Hong, J. Lan, <strong>Shuai Xiao</strong> (correspondence)</div>
+            <div class="publication-venue">The 18th European Conference on Computer Vision (ECCV), 2024</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="#" target="_blank">Project</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Beyond Static Scenes: Camera-Controllable Background Generation for Human Motion</div>
+            <div class="publication-authors">M. Yao, M. Chen, Q. Zhou, Y. Zhang, M. Liu, X. Li, S. Liu, C. Ju, <strong>Shuai Xiao</strong>, Q. Liu, others</div>
+            <div class="publication-venue">arXiv / Under review, 2026</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Projects &amp; Applications</h3>
+        <ul class="project-list">
+          <li class="project-item">
+            <h4>Virtual Try-On System</h4>
+            <p>Diffusion-based image and video virtual try-on deployed in e-commerce scenarios, supporting manipulable pose and garment correspondence.</p>
+          </li>
+          <li class="project-item">
+            <h4>AIGC Content Generation Platform</h4>
+            <p>Core algorithms of Alibaba's AIGC platform, generating a large volume of marketing assets with controllable motion and background.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Direction 4: Agent Systems -->
+      <section class="research-section" id="agent-systems">
+        <h2>Agent Systems</h2>
+        <p>
+          We build intelligent agent systems for e-commerce, including product content understanding, buyer/seller agents, and intelligent customer service.
+        </p>
+        <p>
+          These agents combine multimodal perception, sequential decision making, and reinforcement learning to support tasks such as automated product understanding, personalized recommendation, seller assistance, and customer service dialogue, all deployed at scale within Alibaba's ecosystem.
+        </p>
+
+        <h3 class="subsection-title">Representative Papers</h3>
+        <ul class="publication-list">
+          <li class="publication-item">
+            <div class="publication-title">Model-based Constrained MDP for Budget Allocation in Sequential Incentive Marketing</div>
+            <div class="publication-authors"><strong>Shuai Xiao</strong> (correspondence), L. Guo, Z. Jiang, L. Lv, Y. Chen, J. Zhu, S. Yang</div>
+            <div class="publication-venue">The 28th ACM International Conference on Information and Knowledge Management (CIKM), 2019</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Learning Temporal Point Processes via Reinforcement Learning</div>
+            <div class="publication-authors">S. Li, <strong>Shuai Xiao</strong>, S. Zhu, N. Du, Y. Xie, L. Song</div>
+            <div class="publication-venue">The Thirty-second Annual Conference on Neural Information Processing Systems (NeurIPS), 2018, Spotlight</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+              <a href="#" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="publication-item">
+            <div class="publication-title">Tile Networks: Learning Optimal Geometric Layout for Whole-page Recommendation</div>
+            <div class="publication-authors"><strong>Shuai Xiao</strong> (correspondence), Z. Jiang, S. Yang</div>
+            <div class="publication-venue">International Conference on Artificial Intelligence and Statistics (AISTATS), 2022</div>
+            <div class="publication-links">
+              <a href="#" target="_blank">Paper</a>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Projects &amp; Applications</h3>
+        <ul class="project-list">
+          <li class="project-item">
+            <h4>Product Content Understanding Agent</h4>
+            <p>Multimodal agent systems that automatically understand and generate product content from images, videos, and text, powering listing quality and search relevance in Alibaba's e-commerce platform.</p>
+          </li>
+          <li class="project-item">
+            <h4>Buyer / Seller Agent</h4>
+            <p>Intelligent agents that assist buyers in product discovery and decision making, and help sellers optimize content, pricing, and operations through automated recommendations and insights.</p>
+          </li>
+          <li class="project-item">
+            <h4>Intelligent Customer Service</h4>
+            <p>LLM-based customer service agents capable of multi-turn dialogue, after-sales support, and personalized responses, deployed at scale across Alibaba's consumer services.</p>
+          </li>
+          <li class="project-item">
+            <h4>Sequential Incentive Marketing Agent</h4>
+            <p>Model-based constrained MDP for budget allocation deployed in financial marketing, optimizing long-term user engagement under strict budget constraints.</p>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>© 2026 Shuai Xiao. Built with a classic academic style and hosted on GitHub Pages.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
