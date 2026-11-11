@@ -95,6 +95,13 @@ a:hover {
   line-height: 1.6;
 }
 
+.profile-lab {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .contact-list {
   list-style: none;
   margin-top: 20px;
@@ -180,6 +187,109 @@ a:hover {
 
 .intro-text p {
   margin-bottom: 14px;
+}
+
+/* Lab */
+.lab-intro {
+  padding: 22px 24px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+  background: var(--bg-light);
+}
+
+.lab-name-zh {
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.lab-focus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.lab-focus-list li {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* People */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.people-group {
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-light);
+}
+
+.people-group h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.people-list {
+  padding-left: 18px;
+}
+
+.people-list li {
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+/* Teaching */
+.course-list {
+  list-style: none;
+}
+
+.course-item {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.course-item:first-child {
+  padding-top: 0;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-term {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.course-title {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.course-title-zh {
+  margin-top: 2px;
+  color: var(--text-light);
+  font-size: 13px;
 }
 
 /* News */
@@ -454,6 +564,17 @@ a:hover {
 
   .nav-menu li {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 
